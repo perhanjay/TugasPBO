@@ -18,7 +18,7 @@ class LuasIsiTabung {
     }
 
     double hitungLuas(){
-        return pi * height * range;
+        return 2 * Math.PI * range * (range + height);
     }
 }
 
