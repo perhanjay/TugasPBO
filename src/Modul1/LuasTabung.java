@@ -10,7 +10,7 @@ public class LuasTabung {
     }
 
     double hitungLuas() {
-        return Math.PI * range*range * height;
+        return 2 * Math.PI * range * (range + height);
     }
 
     public static void main(String[] args) {
