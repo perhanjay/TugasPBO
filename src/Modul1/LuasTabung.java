@@ -1,16 +1,16 @@
 package Modul1;
 
 public class LuasTabung {
-    double range;
+    double radius;
     double height;
 
     public LuasTabung(double range, double height) {
-        this.range = range;
+        this.radius = range;
         this.height = height;
     }
 
     double hitungLuas() {
-        return 2 * Math.PI * range * (range + height);
+        return 2 * Math.PI * radius * (radius + height);
     }
 
     public static void main(String[] args) {

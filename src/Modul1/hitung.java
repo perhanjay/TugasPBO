@@ -10,15 +10,15 @@ public class hitung {
 class LuasIsiTabung {
     double pi = Math.PI;
     double height;
-    double range;
+    double radius;
 
-    public LuasIsiTabung(double height, double range) {
+    public LuasIsiTabung(double height, double radius) {
         this.height = height;
-        this.range = range;
+        this.radius = radius;
     }
 
     double hitungLuas(){
-        return 2 * Math.PI * range * (range + height);
+        return 2 * Math.PI * radius * (radius + height);
     }
 }
 
