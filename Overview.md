@@ -14,8 +14,9 @@
 - [x] Modul 7
 	- Soal Pertama "AplikasiBangunRuang", <mark style="background: #ADCCFFA6;"># agak ragu sama overriding di kelas masing masing</mark>
 	- Soal Kedua "ProgramAlatMusik", <mark style="background: #ADCCFFA6;"># jujurly ragu sama apa yang dipolymorph</mark>,
-- [ ] <mark style="background: #ADCCFFA6;">Modul 8</mark>
+- [x] <mark style="background: #ADCCFFA6;">Modul 8</mark>
 - Baru soal yang pertama
+- Soal kedua "StringAcesser"
 - [ ] Modul 9
 - [ ] Modul 10
 
