@@ -18,7 +18,7 @@
 - Baru soal yang pertama
 - Soal kedua "StringAcesser"
 - [x] Modul 9
-- Sudah selesai, tapi pengerjaan di Netbeans. "Main.java"
+- Hampir selesai, masih ragu dengan "persen", dan "akar" tapi pengerjaan di Netbeans. "Main.java"
 - [ ] Modul 10
 
 color schemes: 
