@@ -17,7 +17,8 @@
 - [x] <mark style="background: #ADCCFFA6;">Modul 8</mark>
 - Baru soal yang pertama
 - Soal kedua "StringAcesser"
-- [ ] Modul 9
+- [x] Modul 9
+- Sudah selesai, tapi pengerjaan di Netbeans. "Main.java"
 - [ ] Modul 10
 
 color schemes: 
