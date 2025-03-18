@@ -4,7 +4,7 @@
 //b. Bilangan ganjil dan genap antara 1-1000
 package Modul3;
 
-public class BilanganPrima {
+public class BilangnyaPrima {
     public static void main(String[] args) {
         cariBilanganPrima();
     }
