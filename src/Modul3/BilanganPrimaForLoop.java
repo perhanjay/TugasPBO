@@ -3,21 +3,21 @@
 //a. Bilangan prima antara 1-1000
 //b. Bilangan ganjil dan genap antara 1-1000
 package Modul3;
-public class BilangnyaPrima {
+public class BilanganPrimaForLoop {
     public static void main(String[] args) {
-        System.out.println("Bilangan prima antara 1 dan 1000:");
+        System.out.println("Bilangan prima antara 1 dan 1000 menggunakan For Loop:");
 
-        for (int num = 2; num <= 1000; num++) {
+        for (int bilangan = 2; bilangan <= 1000; bilangan++) {
             boolean isPrima = true;
-            for (int i = 2; i <= Math.sqrt(num); i++) {
-                if (num % i == 0) {
+            for (int pembagi = 2; pembagi <= Math.sqrt(bilangan); pembagi++) {
+                if (bilangan % pembagi == 0) {
                     isPrima = false;
                     break;
                 }
             }
 
             if (isPrima) {
-                System.out.println(num + " ");
+                System.out.println(bilangan);
             }
         }
     }
