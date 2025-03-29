@@ -21,6 +21,20 @@
 - Hampir selesai, masih ragu dengan "persen", dan "akar" tapi pengerjaan di Netbeans. "Main.java"
 - [ ] Modul 10
 
+#### TODO Laprak
+- [x] Modul 1 
+- [x] Modul 2
+- [ ] Modul 3
+  -  on progress
+- [ ] Modul 4
+- [ ] Modul 5 
+- [ ] Modul 6
+- [ ] Modul 7
+- [ ] Modul 8
+- [ ] Modul 9
+- [ ] Modul 10
+
+
 color schemes: 
 -<mark style="background: #FF5582A6;"># red</mark> : warning
 -<mark style="background: #ADCCFFA6;"># blue</mark> : caution

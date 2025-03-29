@@ -2,8 +2,6 @@ package Modul1;
 
 public class hitung {
     public static void main(String[] args) {
-        LuasIsiTabung tabung = new LuasIsiTabung(10, 5);
-//        LuasTrapesium trapesium = new LuasTrapesium();
     }
 }
 
