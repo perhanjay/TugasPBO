@@ -15,6 +15,6 @@ public class VolumeTabung {
 
     public static void main(String[] args) {
         VolumeTabung tabung = new VolumeTabung(5, 10);
-        System.out.println(tabung.hitungVolume());
+        System.out.println("Volume Tabung: " + tabung.hitungVolume());
     }
 }

@@ -17,7 +17,7 @@ public class BilanganPrimaForLoop {
             }
 
             if (isPrima) {
-                System.out.println(bilangan);
+                System.out.print(bilangan + " ");
             }
         }
     }

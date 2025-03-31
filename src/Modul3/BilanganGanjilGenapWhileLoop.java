@@ -5,23 +5,24 @@
 package Modul3;
 
 public class BilanganGanjilGenapWhileLoop {
+
     static void cariGanjil(){
-        System.out.println("Bilangan ganjil antara 1 - 1000");
-        int i =1;
-        while(i<=1000) {
-            if (i%2==1){
-                System.out.println(i);
+        System.out.println("Bilangan ganjil antara 1 - 1000 menggunakan While loop: ");
+        int i = 1;
+        while(i <= 1000) {
+            if (i % 2 == 1){
+                System.out.print(i + " ");
             }
             i++;
         }
     }
 
     static void cariGenap(){
-        System.out.println("Bilangan genap antara 1 - 1000");
-        int i =1;
-        while(i<=1000) {
-            if (i%2==0){
-                System.out.println(i);
+        System.out.println("\nBilangan genap antara 1 - 1000 menggunakan While loop: ");
+        int i = 1;
+        while(i <= 1000) {
+            if (i % 2 == 0){
+                System.out.print(i + " ");
             }
             i++;
         }

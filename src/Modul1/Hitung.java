@@ -1,12 +1,20 @@
 package Modul1;
 
-public class hitung {
+
+public class Hitung {
     public static void main(String[] args) {
+        LuasIsiTabung tabung = new LuasIsiTabung(10, 5);
+        System.out.println("Luas Tabung: " + tabung.hitungLuas());
+
+        LuasPersegiPanjang persegiPanjang = new LuasPersegiPanjang(10, 5);
+        System.out.println("Luas Persegi Panjang: " + persegiPanjang.hitungLuas());
+
+        LuasTrapesium trapesium = new LuasTrapesium(5,10,5);
+        System.out.println("Luas Trapesium: " + trapesium.hitungLuas());
     }
 }
 
 class LuasIsiTabung {
-    double pi = Math.PI;
     double height;
     double radius;
 

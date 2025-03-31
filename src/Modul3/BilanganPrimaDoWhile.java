@@ -1,24 +1,24 @@
 package Modul3;
-public class BilangnyaPrimaWhile {
+public class BilanganPrimaDoWhile {
     public static void main(String[] args) {
-        System.out.println("Bilangan prima antara 1 dan 1000:");
+        System.out.println("Bilangan prima 1 - 1000 dengan menggunakan Do While");
         int bilangan = 2;
-
-        while (bilangan <= 1000) {
+        do {
             boolean isPrima = true;
-
             int pembagi = 2;
-            while (pembagi <= Math.sqrt(bilangan)) {
+
+            do {
                 if (bilangan % pembagi == 0) {
                     isPrima = false;
-                    break;
                 }
                 pembagi++;
-            }
+            } while (isPrima && pembagi <= Math.sqrt(bilangan));
+
             if (isPrima) {
                 System.out.print(bilangan + " ");
             }
+
             bilangan++;
-        }
+        } while (bilangan <= 1000);
     }
 }
