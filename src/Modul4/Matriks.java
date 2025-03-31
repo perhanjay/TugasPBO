@@ -13,11 +13,12 @@ public class Matriks {
         Scanner input = new Scanner(System.in);
         int pilihanPengguna = 0;
 
-        while (pilihanPengguna != 5) {
+        while (pilihanPengguna != 4) {
             System.out.print("Pilih opsi untuk melanjutkan"
                     + "\n1. Masukkan nilai matriks"
                     + "\n2. Kalikan matriks"
                     + "\n3. Kurangkan matriks"
+                    + "\n4. Hentikan program"
                     + "\n: ");
             pilihanPengguna = input.nextInt();
             switch (pilihanPengguna) {
@@ -31,7 +32,6 @@ public class Matriks {
                     kurangMatriks();
                     break;
             }
-            System.out.println("Press any keys to continue...");
         }
     }
 
