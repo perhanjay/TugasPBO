@@ -50,10 +50,8 @@ public class Matriks {
                 isiMatriksX();
                 isiMatriksY();
         }
-
-
-
     }
+
     static void isiMatriksX() {
         System.out.print("\nMatriks X\n");
         Scanner input = new Scanner(System.in);

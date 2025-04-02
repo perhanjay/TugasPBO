@@ -29,6 +29,7 @@ public class ProfileMahasiswa {
         this.jurusan = jurusan;
         System.out.println("Nama: " + nama + "\nNIM: " + nim + "\nJurusan: " + jurusan);
     }
+
     public ProfileMahasiswa(String nama, int nim, String jurusan, String fakultas) {
         this.nama = nama;
         this.nim = nim;
