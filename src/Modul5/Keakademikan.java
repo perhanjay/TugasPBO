@@ -15,14 +15,14 @@ public class Keakademikan {
     void tampilkanInfo(String nama, int nim){
         this.nama = nama;
         this.nim = nim;
-        System.out.println("Nama: " + nama + "\nNIM: " + nim + "\n");
+        System.out.println("Informasi Mahasiswa\nNama: " + nama + "\nNIM: " + nim + "\n");
     }
 
     void tampilkanInfo(String nama, int nim, String jurusan){
         this.nama = nama;
         this.nim = nim;
         this.jurusan = jurusan;
-        System.out.println("Nama: " + nama + "\nNIM: " + nim + "\nJurusan: " + jurusan + "\n");
+        System.out.println("Informasi Mahasiswa\nNama: " + nama + "\nNIM: " + nim + "\nJurusan: " + jurusan + "\n");
     }
 
     void tampilkanInfo(String nama, int nim, String jurusan, String fakultas){
@@ -30,20 +30,20 @@ public class Keakademikan {
         this.nim = nim;
         this.jurusan = jurusan;
         this.fakultas = fakultas;
-        System.out.println("Nama: " + nama + "\nNIM: " + nim + "\nJurusan: " + jurusan + "\nFakultas: " + fakultas + "\n");
+        System.out.println("Informasi Mahasiswa\nNama: " + nama + "\nNIM: " + nim + "\nJurusan: " + jurusan + "\nFakultas: " + fakultas + "\n");
     }
 
     void tampilkanInfo(String nama, double ipSemester){
         this.nama = nama;
         this.ipSemester = ipSemester;
-        System.out.println("Nama: " + nama + "\nIP Semester: " + ipSemester + "\n");
+        System.out.println("Prestasi Akademik\nNama: " + nama + "\nIP Semester: " + ipSemester + "\n");
     }
 
     void tampilkanInfo(String nama, double ipSemester, double ipKumulatif){
         this.nama = nama;
         this.ipSemester = ipSemester;
         this.ipKumulatif = ipKumulatif;
-        System.out.println("Nama: " + nama + "\nIP Semester: " + ipSemester + "\nIP Kumulatif: " + ipKumulatif + "\n");
+        System.out.println("Prestasi Akademik\nNama: " + nama + "\nIP Semester: " + ipSemester + "\nIP Kumulatif: " + ipKumulatif + "\n");
     }
 
 
@@ -52,11 +52,15 @@ public class Keakademikan {
         this.ipSemester = ipSemester;
         this.ipKumulatif = ipKumulatif;
         this.riwayatBeasiswa = riwayatBeasiswa;
-        System.out.println("Nama: " + nama + "\nIP Semester: " + ipSemester + "\nIP Kumulatif: " + ipKumulatif + "\nRiwayat Beasiswa: ");
-        for (String x : riwayatBeasiswa){
-            System.out.println(x);
+        System.out.println("Prestasi Akademik\nNama: " + nama + "\nIP Semester: " + ipSemester + "\nIP Kumulatif: " + ipKumulatif + "\nRiwayat Beasiswa: ");
+        if (riwayatBeasiswa != null){
+            for (String x : riwayatBeasiswa){
+                System.out.println(x);
+            }
+            System.out.println();
+        }else{
+            System.out.println("Riwayat beasiswa tidak ditemukan");
         }
-        System.out.println();
     }
 
     void tampilkanInfo(String nama, int nim, String jurusan, String fakultas, double ipSemester, double ipKumulatif, String riwayatBeasiswa[]){
@@ -67,17 +71,21 @@ public class Keakademikan {
         this.ipSemester = ipSemester;
         this.ipKumulatif = ipKumulatif;
         this.riwayatBeasiswa = riwayatBeasiswa;
-        System.out.println("Nama: " + nama + "\nNIM: " + nim + "\nJurusan: " + jurusan + "\nFakultas: " + fakultas + "\nIP Semester: " + ipSemester + "\nIP Kumulatif: " + ipKumulatif + "\nRiwayat Beasiswa:");
-        for (String x : riwayatBeasiswa){
-            System.out.println(x);
-        }
-        System.out.println();
+        System.out.println("Informasi Mahasiswa\nNama: " + nama + "\nNIM: " + nim + "\nJurusan: " + jurusan + "\nFakultas: " + fakultas + "\nPrestasi Akademik\nIP Semester: " + ipSemester + "\nIP Kumulatif: " + ipKumulatif + "\nRiwayat Beasiswa:");
+        if (riwayatBeasiswa != null){
+            for (String x : riwayatBeasiswa){
+                System.out.println(x);
+            }
+            System.out.println();
+        }else{
+        System.out.println("Riwayat beasiswa tidak ditemukan");
+    }
     }
 
     public static void main(String[] args) {
         Keakademikan ferhan = new Keakademikan();
-        ferhan.tampilkanInfo("Ferhan", 11241056, "JMTI", "FSTI");
-        ferhan.tampilkanInfo("Ferhan", 3.39, 3.9, new String[]{"KIP", "BNI"});
-        ferhan.tampilkanInfo("Ferhan", 11241056, "JMTI", "FSTI", 3.39, 3.39, new String[]{"KIP", "BNI"});
+        ferhan.tampilkanInfo("Muhammad Iqbal Ferhan", 11241056, "JTEIB", "FSTI");
+        ferhan.tampilkanInfo("Muhammad Iqbal Ferhan",3.39,3.39, new String[]{"KIP", "Pertamina Foundation"});
+        ferhan.tampilkanInfo("Muhammad Iqbal Ferhan", 11241056, "JTEIB", "FSTI" ,3.39,3.39, new String[]{"BCA", "BRI"});
     }
 }

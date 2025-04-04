@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Matriks {
     static int[][] matriks1 = new int[2][2];
-    static int[][] matriks2 = new int [2] [2];
-    static int[][] hasil = new int [2] [2];
+    static int[][] matriks2 = new int[2][2];
+    static int[][] hasil = new int[2][2];
 
     public static void main(String[] args) {
         System.out.println("Selamat datang pada program kalkulasi matriks dimensi 2");

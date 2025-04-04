@@ -8,11 +8,11 @@ import Modul5.ProfileMahasiswa;
 public class ProfilManusia {
     private String nama;
     private int nim;
+    private String email;
     private String jurusan;
     private String fakultas;
     private String universitas;
     private String alamat;
-    private String email;
     private String pekerjaan;
     private String hobi;
     private String keahlian;
@@ -32,6 +32,14 @@ public class ProfilManusia {
 
     public void setNim(int nim) {
         this.nim = nim;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getJurusan() {
@@ -64,14 +72,6 @@ public class ProfilManusia {
 
     public void setAlamat(String alamat) {
         this.alamat = alamat;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getPekerjaan() {
@@ -125,7 +125,7 @@ public class ProfilManusia {
         ProfilManusia ferhan = new ProfilManusia();
         ferhan.setNama("Ferhan");
         ferhan.setNim(11241056);
-        ferhan.setJurusan("JMTI");
+        ferhan.setJurusan("JTEIB");
         ferhan.setFakultas("FSTI");
         ferhan.setUniversitas("Institut Teknologi Kalimantan");
         ferhan.setAlamat("Kalimantan");

@@ -47,7 +47,7 @@ class Saxophone extends AlatMusik{
     }
 }
 class trumpet extends AlatMusik{
-    void hasilkanBunyi(){
+    void hasilkanBunyi() {
         System.out.println("trumpet Menghasilkan bunyi pweeeet pweeet");
     }
 }
