@@ -1,15 +1,14 @@
 package Modul8;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class StringAcesser {
+public class StringAccesser {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan kata kata anda: ");
         String text = sc.nextLine();
 
-        System.out.print("Pilih huruf yang ingin di akses: ");
+        System.out.print("Pilih urutan huruf yang ingin di akses: ");
         int huruf = sc.nextInt();
         try{
             System.out.println(text.charAt(huruf));
