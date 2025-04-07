@@ -375,7 +375,7 @@ public class Data_Mahasiswa extends javax.swing.JFrame {
         try{
             String url = "jdbc:mysql://localhost:3306/Mahasiswa";
             String user = "root";
-            String pass = "R0oTPassW0rd";
+            String pass = "";
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
             mysqlconfig = DriverManager.getConnection(url, user, pass);
         } catch (Exception e){
