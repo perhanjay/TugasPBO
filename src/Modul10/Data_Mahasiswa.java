@@ -299,17 +299,27 @@ public class Data_Mahasiswa extends javax.swing.JFrame {
         jTextField3.setText(alamat);
         String no_telepon = jTable1.getValueAt(baris, 5).toString();
         jTextField4.setText(no_telepon);
+        String fakultas = jTable1.getValueAt(baris, 6).toString();
+        jTextField5.setText(fakultas);
+        String universitas = jTable1.getValueAt(baris, 7).toString();
+        jTextField6.setText(universitas);
+        String bidang_peminatan = jTable1.getValueAt(baris, 8).toString();
+        jTextField7.setText(bidang_peminatan);
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
         // TODO add your handling code here:
         //edit button
         try{
-            String sql = "UPDATE table-mhs SET nama = '" + jTextField1.getText()+
+            String sql = "UPDATE `table-mhs` SET nama = '" + jTextField1.getText()+
                     "', nim = '"+ jTextField2.getText()+
                     "', jurusan = '"+ jComboBox1.getSelectedItem()+
                     "',alamat = '"+ jTextField3.getText()+
-                    "', no_telepon = '"+ jTextField4.getText()+"' WHERE nim = '" + jTextField2.getText()+"'";
+                    "', no_telepon = '"+ jTextField4.getText()+
+                    "', fakultas = '"+ jTextField5.getText()+
+                    "', universitas= '"+ jTextField6.getText()+
+                    "', bidang_peminatan = '"+ jTextField7.getText()+
+                    "' WHERE nim = '" + jTextField2.getText()+"'";
             java.sql.Connection conn = (Connection) Data_Mahasiswa.configDB();
             java.sql.PreparedStatement pst = conn.prepareStatement(sql);
             pst.execute();
@@ -325,7 +335,7 @@ public class Data_Mahasiswa extends javax.swing.JFrame {
         // TODO add your handling code here:
         //Tombol hapus
         try{
-            String sql = "DELETE FROM table-mhs WHERE nim = '" + jTextField2.getText()+"'";
+            String sql = "DELETE FROM `table-mhs` WHERE nim = '" + jTextField2.getText()+"'";
             java.sql.Connection conn = (Connection) Data_Mahasiswa.configDB();
             java.sql.PreparedStatement pst = conn.prepareStatement(sql);
             pst.execute();
@@ -365,7 +375,7 @@ public class Data_Mahasiswa extends javax.swing.JFrame {
         try{
             String url = "jdbc:mysql://localhost:3306/Mahasiswa";
             String user = "root";
-            String pass = "empty";
+            String pass = "R0oTPassW0rd";
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
             mysqlconfig = DriverManager.getConnection(url, user, pass);
         } catch (Exception e){
@@ -394,7 +404,7 @@ public class Data_Mahasiswa extends javax.swing.JFrame {
             java.sql.ResultSet res = stm.executeQuery(sql);
             while (res.next()){
                 System.out.println("Success");
-                model.addRow(new Object[]{no++,res.getString(1), res.getString(2), res.getString(3), res.getString(4), res.getString(5), res.getString(7), res.getString(7), res.getString(8)});
+                model.addRow(new Object[]{no++,res.getString(1), res.getString(2), res.getString(3), res.getString(4), res.getString(5), res.getString(6), res.getString(7), res.getString(8)});
             }
             jTable1.setModel(model);
         } catch (Exception e){
@@ -407,6 +417,9 @@ public class Data_Mahasiswa extends javax.swing.JFrame {
         jTextField2.setText(null);
         jTextField3.setText(null);
         jTextField4.setText(null);
+        jTextField5.setText(null);
+        jTextField6.setText(null);
+        jTextField7.setText(null);
         jComboBox1.setSelectedItem(this);
     }
     
@@ -443,7 +456,7 @@ public class Data_Mahasiswa extends javax.swing.JFrame {
             
         });
         
-        System.out.println("HelloWORLrd");
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
